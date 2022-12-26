@@ -14,6 +14,7 @@
 		043FC0D0294DBBF1002FFF3D /* swiftUiPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FC0CF294DBBF1002FFF3D /* swiftUiPracticeTests.swift */; };
 		043FC0DA294DBBF1002FFF3D /* swiftUiPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FC0D9294DBBF1002FFF3D /* swiftUiPracticeUITests.swift */; };
 		043FC0DC294DBBF1002FFF3D /* swiftUiPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FC0DB294DBBF1002FFF3D /* swiftUiPracticeUITestsLaunchTests.swift */; };
+		044AF5F42959844C007FCB6B /* ShapeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AF5F32959844C007FCB6B /* ShapeViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		043FC0D5294DBBF1002FFF3D /* swiftUiPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftUiPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043FC0D9294DBBF1002FFF3D /* swiftUiPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUiPracticeUITests.swift; sourceTree = "<group>"; };
 		043FC0DB294DBBF1002FFF3D /* swiftUiPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUiPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		044AF5F32959844C007FCB6B /* ShapeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				043FC0C0294DBBEF002FFF3D /* ContentView.swift */,
 				043FC0C2294DBBF1002FFF3D /* Assets.xcassets */,
 				043FC0C4294DBBF1002FFF3D /* Preview Content */,
+				044AF5F32959844C007FCB6B /* ShapeViews.swift */,
 			);
 			path = swiftUiPractice;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				043FC0C1294DBBEF002FFF3D /* ContentView.swift in Sources */,
 				043FC0BF294DBBEF002FFF3D /* swiftUiPracticeApp.swift in Sources */,
+				044AF5F42959844C007FCB6B /* ShapeViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
