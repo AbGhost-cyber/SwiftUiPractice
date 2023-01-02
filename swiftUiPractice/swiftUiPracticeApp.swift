@@ -15,7 +15,10 @@ struct swiftUiPracticeApp: App {
            // NavigationStack {
 //                DummyUi()
 //                    .preferredColorScheme(.dark)
-                SheetExampleView()
+              //  SheetExampleView()
+            NavigationStack {
+                ParentView()
+            }
            // }
         }
     }

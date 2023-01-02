@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		042473FD2961A93D00EBDA70 /* SheetExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042473FC2961A93D00EBDA70 /* SheetExampleView.swift */; };
+		0425262B2962CA78001B346B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425262A2962CA78001B346B /* AddView.swift */; };
+		0425262D2962CF59001B346B /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425262C2962CF59001B346B /* ParentView.swift */; };
+		0425262F2962CF86001B346B /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425262E2962CF86001B346B /* ExpenseItem.swift */; };
+		042526312962CF9A001B346B /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042526302962CF9A001B346B /* Expenses.swift */; };
+		042526352962E855001B346B /* MyChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042526342962E855001B346B /* MyChildView.swift */; };
 		043FC0BF294DBBEF002FFF3D /* swiftUiPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FC0BE294DBBEF002FFF3D /* swiftUiPracticeApp.swift */; };
 		043FC0C1294DBBEF002FFF3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FC0C0294DBBEF002FFF3D /* ContentView.swift */; };
 		043FC0C3294DBBF1002FFF3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043FC0C2294DBBF1002FFF3D /* Assets.xcassets */; };
@@ -41,6 +46,11 @@
 
 /* Begin PBXFileReference section */
 		042473FC2961A93D00EBDA70 /* SheetExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetExampleView.swift; sourceTree = "<group>"; };
+		0425262A2962CA78001B346B /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		0425262C2962CF59001B346B /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
+		0425262E2962CF86001B346B /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		042526302962CF9A001B346B /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		042526342962E855001B346B /* MyChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChildView.swift; sourceTree = "<group>"; };
 		043FC0BB294DBBEF002FFF3D /* swiftUiPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUiPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043FC0BE294DBBEF002FFF3D /* swiftUiPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUiPracticeApp.swift; sourceTree = "<group>"; };
 		043FC0C0294DBBEF002FFF3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +101,18 @@
 			path = Sheets;
 			sourceTree = "<group>";
 		};
+		042526292962CA68001B346B /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				0425262A2962CA78001B346B /* AddView.swift */,
+				0425262C2962CF59001B346B /* ParentView.swift */,
+				0425262E2962CF86001B346B /* ExpenseItem.swift */,
+				042526302962CF9A001B346B /* Expenses.swift */,
+				042526342962E855001B346B /* MyChildView.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
 		043FC0B2294DBBEF002FFF3D = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +136,7 @@
 		043FC0BD294DBBEF002FFF3D /* swiftUiPractice */ = {
 			isa = PBXGroup;
 			children = (
+				042526292962CA68001B346B /* Expenses */,
 				042473FB2961A93000EBDA70 /* Sheets */,
 				04EBE46429614CF9009AE79A /* TabView */,
 				043FC0BE294DBBEF002FFF3D /* swiftUiPracticeApp.swift */,
@@ -296,11 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042526312962CF9A001B346B /* Expenses.swift in Sources */,
 				043FC0C1294DBBEF002FFF3D /* ContentView.swift in Sources */,
 				043FC0BF294DBBEF002FFF3D /* swiftUiPracticeApp.swift in Sources */,
 				04EBE45F295EE8D1009AE79A /* DummyUi.swift in Sources */,
 				04EBE46629614D18009AE79A /* HomeView.swift in Sources */,
+				0425262D2962CF59001B346B /* ParentView.swift in Sources */,
+				0425262B2962CA78001B346B /* AddView.swift in Sources */,
 				044AF5F42959844C007FCB6B /* ShapeViews.swift in Sources */,
+				0425262F2962CF86001B346B /* ExpenseItem.swift in Sources */,
+				042526352962E855001B346B /* MyChildView.swift in Sources */,
 				042473FD2961A93D00EBDA70 /* SheetExampleView.swift in Sources */,
 				04EBE4682961513D009AE79A /* NoteItemView.swift in Sources */,
 			);
