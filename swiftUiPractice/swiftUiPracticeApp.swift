@@ -12,7 +12,11 @@ struct swiftUiPracticeApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            ShapeViews()
+           // NavigationStack {
+//                DummyUi()
+//                    .preferredColorScheme(.dark)
+                SheetExampleView()
+           // }
         }
     }
 }
