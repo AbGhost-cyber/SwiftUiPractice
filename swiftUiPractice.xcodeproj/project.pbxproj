@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		042008D52964156D0096C9A7 /* MContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042008D42964156D0096C9A7 /* MContentView.swift */; };
 		042008D72964356B0096C9A7 /* MChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042008D62964356B0096C9A7 /* MChildView.swift */; };
+		0421242D2968003600BFA647 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421242C2968003600BFA647 /* MyView.swift */; };
+		0421242F2968044C00BFA647 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421242E2968044C00BFA647 /* User.swift */; };
+		042124312968045C00BFA647 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042124302968045C00BFA647 /* Response.swift */; };
+		04212433296804C900BFA647 /* CupcakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04212432296804C900BFA647 /* CupcakeView.swift */; };
+		0421243529680F1000BFA647 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421243429680F1000BFA647 /* Order.swift */; };
+		042124372968175C00BFA647 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042124362968175C00BFA647 /* AddressView.swift */; };
 		042473FD2961A93D00EBDA70 /* SheetExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042473FC2961A93D00EBDA70 /* SheetExampleView.swift */; };
 		0425262B2962CA78001B346B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425262A2962CA78001B346B /* AddView.swift */; };
 		0425262D2962CF59001B346B /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425262C2962CF59001B346B /* ParentView.swift */; };
@@ -49,6 +55,12 @@
 /* Begin PBXFileReference section */
 		042008D42964156D0096C9A7 /* MContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MContentView.swift; sourceTree = "<group>"; };
 		042008D62964356B0096C9A7 /* MChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChildView.swift; sourceTree = "<group>"; };
+		0421242C2968003600BFA647 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		0421242E2968044C00BFA647 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		042124302968045C00BFA647 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		04212432296804C900BFA647 /* CupcakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeView.swift; sourceTree = "<group>"; };
+		0421243429680F1000BFA647 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		042124362968175C00BFA647 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		042473FC2961A93D00EBDA70 /* SheetExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetExampleView.swift; sourceTree = "<group>"; };
 		0425262A2962CA78001B346B /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		0425262C2962CF59001B346B /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
@@ -106,6 +118,19 @@
 			path = MoonShot;
 			sourceTree = "<group>";
 		};
+		0421242B2968002700BFA647 /* Cupcake */ = {
+			isa = PBXGroup;
+			children = (
+				0421242C2968003600BFA647 /* MyView.swift */,
+				0421242E2968044C00BFA647 /* User.swift */,
+				042124302968045C00BFA647 /* Response.swift */,
+				04212432296804C900BFA647 /* CupcakeView.swift */,
+				0421243429680F1000BFA647 /* Order.swift */,
+				042124362968175C00BFA647 /* AddressView.swift */,
+			);
+			path = Cupcake;
+			sourceTree = "<group>";
+		};
 		042473FB2961A93000EBDA70 /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +174,7 @@
 		043FC0BD294DBBEF002FFF3D /* swiftUiPractice */ = {
 			isa = PBXGroup;
 			children = (
+				0421242B2968002700BFA647 /* Cupcake */,
 				042008D329640C320096C9A7 /* MoonShot */,
 				042526292962CA68001B346B /* Expenses */,
 				042473FB2961A93000EBDA70 /* Sheets */,
@@ -336,15 +362,21 @@
 				042526312962CF9A001B346B /* Expenses.swift in Sources */,
 				043FC0C1294DBBEF002FFF3D /* ContentView.swift in Sources */,
 				043FC0BF294DBBEF002FFF3D /* swiftUiPracticeApp.swift in Sources */,
+				0421243529680F1000BFA647 /* Order.swift in Sources */,
+				042124312968045C00BFA647 /* Response.swift in Sources */,
 				042008D52964156D0096C9A7 /* MContentView.swift in Sources */,
+				0421242F2968044C00BFA647 /* User.swift in Sources */,
 				04EBE45F295EE8D1009AE79A /* DummyUi.swift in Sources */,
 				042008D72964356B0096C9A7 /* MChildView.swift in Sources */,
+				042124372968175C00BFA647 /* AddressView.swift in Sources */,
 				04EBE46629614D18009AE79A /* HomeView.swift in Sources */,
 				0425262D2962CF59001B346B /* ParentView.swift in Sources */,
 				0425262B2962CA78001B346B /* AddView.swift in Sources */,
+				04212433296804C900BFA647 /* CupcakeView.swift in Sources */,
 				044AF5F42959844C007FCB6B /* ShapeViews.swift in Sources */,
 				0425262F2962CF86001B346B /* ExpenseItem.swift in Sources */,
 				042526352962E855001B346B /* MyChildView.swift in Sources */,
+				0421242D2968003600BFA647 /* MyView.swift in Sources */,
 				042473FD2961A93D00EBDA70 /* SheetExampleView.swift in Sources */,
 				04EBE4682961513D009AE79A /* NoteItemView.swift in Sources */,
 			);
