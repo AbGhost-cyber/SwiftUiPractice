@@ -44,8 +44,8 @@ struct MyView: View {
             Form {
                 Section {
                     Picker("Select your cake type",selection: $order.type) {
-                        ForEach(Order.types, id: \.self) { type in
-                            Text(type)
+                        ForEach(Order.types.indices, id: \.self) {
+                            Text(Order.types[$0])
                         }
                     }
                     Stepper("Number of cakes: \(order.quantity)", value: $order.quantity, in: 3...20)
