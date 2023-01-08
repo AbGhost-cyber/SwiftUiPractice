@@ -17,7 +17,7 @@ struct swiftUiPracticeApp: App {
 //                    .preferredColorScheme(.dark)
               //  SheetExampleView()
             NavigationStack {
-                MyView()
+                PracticeView()
             }
            // }
         }

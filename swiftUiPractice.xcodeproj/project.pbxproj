@@ -29,6 +29,9 @@
 		043FC0DA294DBBF1002FFF3D /* swiftUiPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FC0D9294DBBF1002FFF3D /* swiftUiPracticeUITests.swift */; };
 		043FC0DC294DBBF1002FFF3D /* swiftUiPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FC0DB294DBBF1002FFF3D /* swiftUiPracticeUITestsLaunchTests.swift */; };
 		044AF5F42959844C007FCB6B /* ShapeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AF5F32959844C007FCB6B /* ShapeViews.swift */; };
+		04AC3741296A79D300866416 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC3740296A79D300866416 /* PracticeView.swift */; };
+		04AC3745296A7E4A00866416 /* product_sans_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04AC3743296A7CE400866416 /* product_sans_bold.ttf */; };
+		04AC3746296A7E4A00866416 /* product_sans_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04AC3744296A7CEF00866416 /* product_sans_regular.ttf */; };
 		04EBE45F295EE8D1009AE79A /* DummyUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE45E295EE8D1009AE79A /* DummyUi.swift */; };
 		04EBE462295EECDA009AE79A /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 04EBE461295EECDA009AE79A /* SwiftUIFontIcon */; };
 		04EBE46629614D18009AE79A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE46529614D18009AE79A /* HomeView.swift */; };
@@ -78,6 +81,10 @@
 		043FC0D9294DBBF1002FFF3D /* swiftUiPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUiPracticeUITests.swift; sourceTree = "<group>"; };
 		043FC0DB294DBBF1002FFF3D /* swiftUiPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUiPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		044AF5F32959844C007FCB6B /* ShapeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeViews.swift; sourceTree = "<group>"; };
+		04AC3740296A79D300866416 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		04AC3743296A7CE400866416 /* product_sans_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = product_sans_bold.ttf; sourceTree = "<group>"; };
+		04AC3744296A7CEF00866416 /* product_sans_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = product_sans_regular.ttf; sourceTree = "<group>"; };
+		04AC3747296A803D00866416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		04EBE45E295EE8D1009AE79A /* DummyUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUi.swift; sourceTree = "<group>"; };
 		04EBE46529614D18009AE79A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		04EBE4672961513D009AE79A /* NoteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItemView.swift; sourceTree = "<group>"; };
@@ -174,6 +181,8 @@
 		043FC0BD294DBBEF002FFF3D /* swiftUiPractice */ = {
 			isa = PBXGroup;
 			children = (
+				04AC3747296A803D00866416 /* Info.plist */,
+				04AC373F296A79C400866416 /* SomePractice */,
 				0421242B2968002700BFA647 /* Cupcake */,
 				042008D329640C320096C9A7 /* MoonShot */,
 				042526292962CA68001B346B /* Expenses */,
@@ -211,6 +220,24 @@
 				043FC0DB294DBBF1002FFF3D /* swiftUiPracticeUITestsLaunchTests.swift */,
 			);
 			path = swiftUiPracticeUITests;
+			sourceTree = "<group>";
+		};
+		04AC373F296A79C400866416 /* SomePractice */ = {
+			isa = PBXGroup;
+			children = (
+				04AC3742296A7C4A00866416 /* Fonts */,
+				04AC3740296A79D300866416 /* PracticeView.swift */,
+			);
+			path = SomePractice;
+			sourceTree = "<group>";
+		};
+		04AC3742296A7C4A00866416 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				04AC3743296A7CE400866416 /* product_sans_bold.ttf */,
+				04AC3744296A7CEF00866416 /* product_sans_regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		04EBE46429614CF9009AE79A /* TabView */ = {
@@ -333,6 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AC3745296A7E4A00866416 /* product_sans_bold.ttf in Resources */,
+				04AC3746296A7E4A00866416 /* product_sans_regular.ttf in Resources */,
 				043FC0C6294DBBF1002FFF3D /* Preview Assets.xcassets in Resources */,
 				043FC0C3294DBBF1002FFF3D /* Assets.xcassets in Resources */,
 			);
@@ -363,6 +392,7 @@
 				043FC0C1294DBBEF002FFF3D /* ContentView.swift in Sources */,
 				043FC0BF294DBBEF002FFF3D /* swiftUiPracticeApp.swift in Sources */,
 				0421243529680F1000BFA647 /* Order.swift in Sources */,
+				04AC3741296A79D300866416 /* PracticeView.swift in Sources */,
 				042124312968045C00BFA647 /* Response.swift in Sources */,
 				042008D52964156D0096C9A7 /* MContentView.swift in Sources */,
 				0421242F2968044C00BFA647 /* User.swift in Sources */,
@@ -540,6 +570,7 @@
 				DEVELOPMENT_TEAM = Z2K7G5MR42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = swiftUiPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -569,6 +600,7 @@
 				DEVELOPMENT_TEAM = Z2K7G5MR42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = swiftUiPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
