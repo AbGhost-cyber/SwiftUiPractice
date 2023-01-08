@@ -12,41 +12,53 @@ struct SecondView : View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationStack {
-            VStack {
-                
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Image(systemName: "checkmark")
-                        .renderingMode(.original)
-                        .onTapGesture {
-                            dismiss()
-                        }
-                }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Image(systemName: "xmark")
-                        .renderingMode(.template)
-                        .foregroundColor(.accentColor)
-                        .onTapGesture {
-                            dismiss()
-                        }
-                }
-            }
+            Text("Select")
+                .font(.title)
+            HStack {
+                Image(systemName: "star")
+                    .padding()
+                Image(systemName: "bell")
+                    .padding()
+                Image(systemName: "globe")
+                    .padding()
+                Image(systemName: "house")
+                    .padding()
+            }.padding()
+            //            .toolbar {
+            //                ToolbarItem(placement: .navigationBarTrailing) {
+            //                    Image(systemName: "checkmark")
+            //                        .renderingMode(.original)
+            //                        .onTapGesture {
+            //                            dismiss()
+            //                        }
+            //                }
+            //                ToolbarItem(placement: .navigationBarLeading) {
+            //                    Image(systemName: "xmark")
+            //                        .renderingMode(.template)
+            //                        .foregroundColor(.accentColor)
+            //                        .onTapGesture {
+            //                            dismiss()
+            //                        }
+            //                }
+            //            }
         }
         
     }
 }
 struct SheetExampleView: View {
     @State var isSheetShowing = false
-   
+    
     
     var body: some View {
         NavigationStack {
             Button("Show Sheet ") {
                 isSheetShowing.toggle()
             }
-            .sheet(isPresented: $isSheetShowing, onDismiss: {isSheetShowing = false}) {
-               SecondView()
+            .buttonStyle(.borderedProminent)
+            .sheet(isPresented: $isSheetShowing,
+                   onDismiss: {isSheetShowing = false}) {
+                SecondView()
+                    .presentationDetents([.fraction(0.2)])
             }
         }
         
