@@ -17,7 +17,29 @@ struct swiftUiPracticeApp: App {
 //                    .preferredColorScheme(.dark)
               //  SheetExampleView()
             NavigationStack {
-               PlayView()
+                TabView {
+                    PlayView()
+                        .tabItem {
+                            Text("Home")
+                            Image("home")
+                        }
+                    VStack{}
+                        .tabItem {
+                            Text("Voucher")
+                            Image("voucher")
+                        }
+                    VStack{}
+                        .tabItem {
+                            Text("Exchange")
+                            Image("exchange")
+                        }
+                    VStack{}
+                        .tabItem {
+                            Text("Escrow")
+                            Image("shake")
+                        }
+                }
+                .tint(.blue)
             }
            // }
         }
