@@ -39,11 +39,7 @@ struct AddBookView: View {
                 Section {
                     TextEditor(text: $state.review)
                         .font(.custom("ProductSans-Regular", size: 18))
-                    Picker("Rating", selection: $state.rating) {
-                        ForEach(0..<6) {
-                            Text(String($0))
-                        }
-                    }
+                    RatingView(rating: $state.rating)
                 } header: {
                     Text("Write a review")
                         .font(.custom("ProductSans-Regular", size: 15))

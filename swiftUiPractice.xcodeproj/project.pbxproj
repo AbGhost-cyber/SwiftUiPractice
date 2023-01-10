@@ -38,6 +38,7 @@
 		04AC3756296D5C3500866416 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04AC3754296D5C3500866416 /* Bookworm.xcdatamodeld */; };
 		04AC3758296D5C8900866416 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC3757296D5C8900866416 /* DataController.swift */; };
 		04AC375A296D63ED00866416 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC3759296D63ED00866416 /* AddBookView.swift */; };
+		04AC375C296DAD9900866416 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC375B296DAD9900866416 /* RatingView.swift */; };
 		04EBE45F295EE8D1009AE79A /* DummyUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE45E295EE8D1009AE79A /* DummyUi.swift */; };
 		04EBE462295EECDA009AE79A /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 04EBE461295EECDA009AE79A /* SwiftUIFontIcon */; };
 		04EBE46629614D18009AE79A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE46529614D18009AE79A /* HomeView.swift */; };
@@ -97,6 +98,7 @@
 		04AC3755296D5C3500866416 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		04AC3757296D5C8900866416 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		04AC3759296D63ED00866416 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		04AC375B296DAD9900866416 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		04EBE45E295EE8D1009AE79A /* DummyUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUi.swift; sourceTree = "<group>"; };
 		04EBE46529614D18009AE79A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		04EBE4672961513D009AE79A /* NoteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItemView.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				04AC3754296D5C3500866416 /* Bookworm.xcdatamodeld */,
 				04AC3757296D5C8900866416 /* DataController.swift */,
 				04AC3759296D63ED00866416 /* AddBookView.swift */,
+				04AC375B296DAD9900866416 /* RatingView.swift */,
 			);
 			path = BookWorm;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				0421242D2968003600BFA647 /* MyView.swift in Sources */,
 				042473FD2961A93D00EBDA70 /* SheetExampleView.swift in Sources */,
 				04EBE4682961513D009AE79A /* NoteItemView.swift in Sources */,
+				04AC375C296DAD9900866416 /* RatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
