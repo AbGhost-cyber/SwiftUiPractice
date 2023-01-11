@@ -8,29 +8,59 @@
 import SwiftUI
 
 struct BookWormView: View {
-    @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.title), SortDescriptor(\.author)]) var books: FetchedResults<Book>
     @Environment(\.managedObjectContext) var context
     @State private var showAddModal = false
     
     var body: some View {
         NavigationStack {
-            Text("Count: \(books.count)")
-                .font(.custom("ProductSans-Bold", size: 24))
-                .navigationTitle("Bookworm")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            showAddModal.toggle()
-                        } label: {
-                            Label("Add Book", systemImage: "plus")
+            List {
+                ForEach(books) { book in
+                    NavigationLink {
+                        DetailView(book: book)
+                            .environment(\.managedObjectContext, context)
+                    } label: {
+                        HStack {
+                            EmojiRatingView(rating: book.rating)
+                            VStack(alignment: .leading) {
+                                Text(book.title ?? "Unknown Title")
+                                    .font(.custom("ProductSans-Bold", size: 20))
+                                Text(book.author ?? "Unknown Author")
+                                    .foregroundColor(.secondary)
+                                    .font(.custom("ProductSans-Regular", size: 17))
+                            }
                         }
-
                     }
+                    
                 }
-                .sheet(isPresented: $showAddModal) {
-                    AddBookView()
+                .onDelete(perform: deleteBooks)
+            }
+            .navigationTitle("Bookworm")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showAddModal.toggle()
+                    } label: {
+                        Label("Add Book", systemImage: "plus")
+                    }
+                    
                 }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
+            }
+            .sheet(isPresented: $showAddModal) {
+                AddBookView()
+            }
         }
+    }
+    
+    func deleteBooks(at offsets: IndexSet) {
+        for offset in offsets {
+            let book = books[offset]
+            context.delete(book)
+        }
+        try? context.save()
     }
 }
 //struct PushButton: View {
@@ -52,7 +82,7 @@ struct BookWormView: View {
 //    }
 //}
 struct BookWormView_Previews: PreviewProvider {
-    @StateObject static var dataController = DataController()
+    @StateObject static var dataController = DataController.shared
     static var previews: some View {
         NavigationStack {
             BookWormView()

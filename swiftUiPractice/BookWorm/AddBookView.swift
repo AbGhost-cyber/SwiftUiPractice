@@ -11,8 +11,12 @@ struct AddBookState {
     var title = ""
     var author = ""
     var rating = 3
-    var genre = ""
+    var genre = "Fantasy"
     var review = ""
+    
+    func notValid() -> Bool {
+        return title.isEmpty || author.isEmpty || genre.isEmpty || review.isEmpty
+    }
 }
 struct AddBookView: View {
     @Environment(\.managedObjectContext) var context
@@ -48,7 +52,7 @@ struct AddBookView: View {
                     Button("Save") {
                        createNewBook()
                     }
-                }
+                }.disabled(state.notValid())
             }
             .navigationTitle("Add Book")
         }

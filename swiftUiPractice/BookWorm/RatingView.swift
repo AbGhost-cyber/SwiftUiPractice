@@ -44,6 +44,6 @@ struct RatingView: View {
 
 struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingView(rating: .constant(5))
+        RatingView(rating: .constant(3))
     }
 }
