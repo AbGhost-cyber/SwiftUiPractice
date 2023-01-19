@@ -42,6 +42,7 @@
 		04AC375C296DAD9900866416 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC375B296DAD9900866416 /* RatingView.swift */; };
 		04AC375E296E67EF00866416 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC375D296E67EF00866416 /* EmojiRatingView.swift */; };
 		04AC3760296E6C3400866416 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC375F296E6C3400866416 /* DetailView.swift */; };
+		04C05E962978F3D800E56BE0 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C05E952978F3D800E56BE0 /* MoodView.swift */; };
 		04EBE45F295EE8D1009AE79A /* DummyUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE45E295EE8D1009AE79A /* DummyUi.swift */; };
 		04EBE462295EECDA009AE79A /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 04EBE461295EECDA009AE79A /* SwiftUIFontIcon */; };
 		04EBE46629614D18009AE79A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE46529614D18009AE79A /* HomeView.swift */; };
@@ -105,6 +106,7 @@
 		04AC375B296DAD9900866416 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		04AC375D296E67EF00866416 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		04AC375F296E6C3400866416 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		04C05E952978F3D800E56BE0 /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
 		04EBE45E295EE8D1009AE79A /* DummyUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUi.swift; sourceTree = "<group>"; };
 		04EBE46529614D18009AE79A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		04EBE4672961513D009AE79A /* NoteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItemView.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				046360862978412700D9DA95 /* LayoutView.swift */,
+				04C05E952978F3D800E56BE0 /* MoodView.swift */,
 			);
 			path = Layouting;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				042008D72964356B0096C9A7 /* MChildView.swift in Sources */,
 				042124372968175C00BFA647 /* AddressView.swift in Sources */,
 				04EBE46629614D18009AE79A /* HomeView.swift in Sources */,
+				04C05E962978F3D800E56BE0 /* MoodView.swift in Sources */,
 				0425262D2962CF59001B346B /* ParentView.swift in Sources */,
 				0425262B2962CA78001B346B /* AddView.swift in Sources */,
 				04212433296804C900BFA647 /* CupcakeView.swift in Sources */,

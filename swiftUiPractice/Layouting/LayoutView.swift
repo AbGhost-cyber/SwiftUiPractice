@@ -12,6 +12,7 @@ struct HalfCard: View {
             Image(systemName: "crown.fill")
                 .font(.system(size: 80))
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         .overlay(alignment: .topLeading) {
             VStack {
                 Image(systemName: "crown.fill")
@@ -23,8 +24,6 @@ struct HalfCard: View {
             }
             .padding()
         }
-        .border(.brown)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .border(.green)
     }
 }
