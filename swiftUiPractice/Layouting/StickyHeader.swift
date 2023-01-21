@@ -13,9 +13,24 @@ struct StickyTabView: View {
             StickyHeader()
                 .tabItem {
                     Text("Home")
-                    Image(systemName: <#T##String#>)
+                    Image(systemName: "house")
                 }
-        }
+            VStack {}
+                .tabItem {
+                    Text("Cards")
+                    Image(systemName: "creditcard")
+                }
+            VStack {}
+                .tabItem {
+                    Text("Reports")
+                    Image(systemName: "chart.pie")
+                }
+            VStack {}
+                .tabItem {
+                    Text("Settings")
+                    Image(systemName: "gearshape")
+                }
+        }.tint(.pink)
     }
 }
 
@@ -124,7 +139,7 @@ struct HeaderView: View {
             } label: {
                 Circle()
                     .fill(.white.opacity(0.2))
-                    .frame(width: 30)
+                    .frame(width: 35)
                     .overlay {
                         Image(systemName: "arrow.up.right")
                     }
@@ -135,7 +150,7 @@ struct HeaderView: View {
             } label: {
                 Circle()
                     .fill(.white.opacity(0.2))
-                    .frame(width: 30)
+                    .frame(width: 35)
                     .overlay {
                         Image(systemName: "plus")
                     }
@@ -146,7 +161,7 @@ struct HeaderView: View {
             } label: {
                 Circle()
                     .fill(.white.opacity(0.2))
-                    .frame(width: 30)
+                    .frame(width: 35)
                     .overlay {
                         Image(systemName: "magnifyingglass")
                     }
@@ -157,7 +172,7 @@ struct HeaderView: View {
             } label: {
                 Circle()
                     .fill(.white.opacity(0.2))
-                    .frame(width: 30)
+                    .frame(width: 35)
                     .overlay {
                         Text("DP")
                             .font(.custom("ProductSans-Bold", size: 16))
@@ -199,6 +214,6 @@ struct RowItem: View {
 
 struct StickyHeader_Previews: PreviewProvider {
     static var previews: some View {
-        StickyHeader()
+        StickyTabView()
     }
 }

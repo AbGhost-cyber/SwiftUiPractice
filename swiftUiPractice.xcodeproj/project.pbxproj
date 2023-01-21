@@ -44,6 +44,8 @@
 		04AC3760296E6C3400866416 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC375F296E6C3400866416 /* DetailView.swift */; };
 		04C05E962978F3D800E56BE0 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C05E952978F3D800E56BE0 /* MoodView.swift */; };
 		04C05E982978FC5B00E56BE0 /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C05E972978FC5B00E56BE0 /* StickyHeader.swift */; };
+		04C05E9A297B9DF600E56BE0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C05E99297B9DF600E56BE0 /* CustomTabBar.swift */; };
+		04C05E9D297BB80400E56BE0 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 04C05E9C297BB80400E56BE0 /* OrderedCollections */; };
 		04EBE45F295EE8D1009AE79A /* DummyUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE45E295EE8D1009AE79A /* DummyUi.swift */; };
 		04EBE462295EECDA009AE79A /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 04EBE461295EECDA009AE79A /* SwiftUIFontIcon */; };
 		04EBE46629614D18009AE79A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE46529614D18009AE79A /* HomeView.swift */; };
@@ -109,6 +111,7 @@
 		04AC375F296E6C3400866416 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		04C05E952978F3D800E56BE0 /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
 		04C05E972978FC5B00E56BE0 /* StickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
+		04C05E99297B9DF600E56BE0 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		04EBE45E295EE8D1009AE79A /* DummyUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUi.swift; sourceTree = "<group>"; };
 		04EBE46529614D18009AE79A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		04EBE4672961513D009AE79A /* NoteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItemView.swift; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C05E9D297BB80400E56BE0 /* OrderedCollections in Frameworks */,
 				04EBE462295EECDA009AE79A /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +302,7 @@
 				04EBE46529614D18009AE79A /* HomeView.swift */,
 				04EBE4672961513D009AE79A /* NoteItemView.swift */,
 				04AC374B296AE5F500866416 /* CustomTabView.swift */,
+				04C05E99297B9DF600E56BE0 /* CustomTabBar.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 			name = swiftUiPractice;
 			packageProductDependencies = (
 				04EBE461295EECDA009AE79A /* SwiftUIFontIcon */,
+				04C05E9C297BB80400E56BE0 /* OrderedCollections */,
 			);
 			productName = swiftUiPractice;
 			productReference = 043FC0BB294DBBEF002FFF3D /* swiftUiPractice.app */;
@@ -395,6 +401,7 @@
 			mainGroup = 043FC0B2294DBBEF002FFF3D;
 			packageReferences = (
 				04EBE460295EECDA009AE79A /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+				04C05E9B297BB80300E56BE0 /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 043FC0BC294DBBEF002FFF3D /* Products */;
 			projectDirPath = "";
@@ -448,6 +455,7 @@
 				043FC0BF294DBBEF002FFF3D /* swiftUiPracticeApp.swift in Sources */,
 				0421243529680F1000BFA647 /* Order.swift in Sources */,
 				04AC3741296A79D300866416 /* PracticeView.swift in Sources */,
+				04C05E9A297B9DF600E56BE0 /* CustomTabBar.swift in Sources */,
 				042124312968045C00BFA647 /* Response.swift in Sources */,
 				04AC374E296BCD7B00866416 /* PlayView.swift in Sources */,
 				042008D52964156D0096C9A7 /* MContentView.swift in Sources */,
@@ -801,6 +809,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		04C05E9B297BB80300E56BE0 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		04EBE460295EECDA009AE79A /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon.git";
@@ -812,6 +828,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		04C05E9C297BB80400E56BE0 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04C05E9B297BB80300E56BE0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
 		04EBE461295EECDA009AE79A /* SwiftUIFontIcon */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 04EBE460295EECDA009AE79A /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
