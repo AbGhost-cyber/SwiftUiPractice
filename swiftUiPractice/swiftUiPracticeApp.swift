@@ -12,40 +12,7 @@ struct swiftUiPracticeApp: App {
     @StateObject private var dataController = DataController.shared
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-            // NavigationStack {
-            //                DummyUi()
-            //                    .preferredColorScheme(.dark)
-            //  SheetExampleView()
-            NavigationStack {
-                // TabView {
-                //                    PlayView()
-                //                        .tabItem {
-                //                            Text("Home")
-                //                            Image("home")
-                //                        }
-                //                    VStack{}
-                //                        .tabItem {
-                //                            Text("Voucher")
-                //                            Image("voucher")
-                //                        }
-                //                    VStack{}
-                //                        .tabItem {
-                //                            Text("Exchange")
-                //                            Image("exchange")
-                //                        }
-                //                    VStack{}
-                //                        .tabItem {
-                //                            Text("Escrow")
-                //                            Image("shake")
-                //                        }
-                //                }
-                //                .tint(.blue)
-                BookWormView()
-                    .environment(\.managedObjectContext,
-                                  dataController.container.viewContext)
-            }
-            // }
+           CustomTabBar()
         }
     }
 }

@@ -14,24 +14,12 @@ struct CustomTabBar: View {
     var body: some View {
         VStack {
             ZStack {
-                switch selectedIcon {
-                case "house":
-                    NavigationStack {
-                        StickyHeader()
-                    }
-                case "creditcard", "chart.pie", "gearshape":
-                    NavigationStack {
-                        Text("Hello")
-                            .navigationTitle("\(icons[selectedIcon]!)")
-                    }
-                default:
-                    Text("Settings")
-                }
+                currentScreen()
             }
             Spacer()
             Divider()
             HStack {
-                ForEach(Array(icons.keys), id: \.self) { icon in
+                ForEach(icons.keys, id: \.self) { icon in
                     Spacer()
                     Button {
                         selectedIcon = icon
@@ -56,6 +44,23 @@ struct CustomTabBar: View {
                 }
             }
             .padding(.top, 5)
+        }
+    }
+    
+    @ViewBuilder
+    func currentScreen() -> some View {
+        switch selectedIcon {
+        case "house":
+            NavigationStack {
+                StickyHeader()
+            }
+        case "creditcard", "chart.pie", "gearshape":
+            NavigationStack {
+                Text("Hello")
+                    .navigationTitle("\(icons[selectedIcon]!)")
+            }
+        default:
+            Text("Settings")
         }
     }
 }
